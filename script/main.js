@@ -33,8 +33,9 @@ let audio = null
 
 // 在文档加载时预加载音频
 document.addEventListener("DOMContentLoaded", () => {
-  audio = new Audio("music/bgMusic.mp3")
+  audio = new Audio("music/hbd.mp3")
   audio.preload = "auto"
+  audio.loop=true;
 })
 
 const playPauseButton = document.getElementById('playPauseButton')
